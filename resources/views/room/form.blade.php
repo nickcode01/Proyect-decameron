@@ -7,9 +7,9 @@
 
 
         @if (isset($room))
-            <h1>Editar room</h1>
+            <h1>Editar Tipo habitacion</h1>
         @else
-            <h1>Crear room</h1>
+            <h1>Crear Tipo habitacion</h1>
         @endif
 
 

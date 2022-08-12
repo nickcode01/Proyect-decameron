@@ -2,13 +2,108 @@
 
 
 @section('content')
+<p class="container-sm module-intro"><style type="text/css hide">
+    div#Mod656{
+    background-image:
 
+    url(/images/carruseles/home/sellos.png);
+
+           background-repeat: no-repeat;
+      background-position: 50% 45%;
+      background-size: 240px 55px;
+    }
+
+    </style>
+
+    <video autoplay="" loop="" muted="" poster="https://s3.amazonaws.com/imagesrepository.icommarketing.com/ImagesRepo/NDAwLTYzMi1kZWNhbWVyb25jbw2/632/Site/CO/2022/06junio/home/home.png" class="fillWidth">
+      <source src="https://www.decameron.com/media/360/video-home/video-web-co/video-home-junio-2022-1920x1080.mp4" type="video/mp4">
+      <source src="https://www.decameron.com/media/360/video-home/video-web-co/video-home-junio-2022-1920x1080.ogg" type="video/ogg">
+      <source src="https://www.decameron.com/media/360/video-home/video-web-co/video-home-junio-2022-1920x1080.webm" type="video/webm">
+    </video>
+
+    <style type="text/css">
+
+    video + img{
+      position: absolute;
+      top: 200px;
+      right: 10%;
+      width: 350px;
+    }
+    /* Video */
+    #Mod1059 .module-intro {
+      overflow: hidden;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+    }
+    .module-intro > video.fillWidth {
+      position:absolute;
+      width: 100%;
+      z-index: -1;
+    }
+    @media (max-width: 1200px) {
+      .module-intro > video.fillWidth {
+        left: -50%;
+        width: 150%;
+      }
+    }
+    @media (max-width: 990px) {
+      .module-intro > video.fillWidth {
+        left: -50%;
+        width: 200%;
+      }
+    }
+    @media (max-width: 667px) {
+      .module-intro > video.fillWidth {
+        left: -100%;
+        width: 300%;
+      }
+    }
+    @media (max-width: 500px) {
+      .module-intro > video.fillWidth {
+        left: -150%;
+        width: 350%;
+      }
+    }
+
+
+    /* Booking */
+
+    div#Mod1059{
+      position: relative;
+    }
+
+    div#Mod1059 .section-inner{
+      margin-top: -6px;
+    }
+
+    @media (min-width: 800px) and (min-height: 600px) {
+      div#bookingEngine{
+        margin-top: 340px;
+      }
+    }
+
+    @media (min-width: 800px) and (min-height: 700px) {
+      div#bookingEngine{
+        margin-top: 450px;
+      }
+    }
+
+    </style></p>
     <div class="container text-center">
-        <h1>Welcome</h1>
-        <a href="{{ route('hotel.index') }}" class="btn btn-primary">Gestion Hoteles</a>
-        <a href="{{ route('room.index') }}" class="btn btn-primary">Gestion Tipo Habitaciones</a>
-        <a href="{{ route('accommodation.index') }}" class="btn btn-primary">Gestion Acomodaciones</a>
-        <a href="{{ route('troom.index') }}" class="btn btn-success">Creacion de Habitacion</a>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container p-3 mb-2 bg-light text-dark rounded-pill">
+              <h1 class="display-4 ">HOTELES DECAMERON DE COLOMBIA</h1>
+              <p class="lead">Sistema para ingresar los hoteles de la compañíaJunto con sus datos</p>
+
+                <a href="{{ route('hotel.index') }}" class="btn btn-primary">Gestion Hoteles</a>
+                <a href="{{ route('room.index') }}" class="btn btn-primary">Gestion Tipo Habitaciones</a>
+                <a href="{{ route('accommodation.index') }}" class="btn btn-primary">Gestion Acomodaciones</a>
+                <a href="{{ route('troom.index') }}" class="btn btn-success">Creacion de Habitacion</a>
+    </div>
+</div>
     </div>
 
 @endsection

@@ -5,7 +5,7 @@
 
     <div class="container text-center">
         <h1>Listado de Habitacion</h1>
-        <a href="{{ route('troom.create', ['id'=>1]) }}" class="btn btn-primary">Crear Clientes</a>
+        <a href="{{ route('troom.create', ['id'=>1]) }}" class="btn btn-primary">Crear Habitacion</a>
 
         @if (Session::has('mensaje'))
 
@@ -20,7 +20,7 @@
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Hotel</th>
+                {{-- <th scope="col">Hotel</th> --}}
                 <th scope="col">habitacion</th>
                 <th scope="col">acomodacion</th>
                 <th scope="col">numero habitaciones</th>
@@ -35,7 +35,7 @@
 
               <tr>
                 <th scope="row">{{$row->id}}</th>
-                <td>{{$row->hotels->name}}</td>
+                {{-- <td>{{$row->hotels->id}}</td> --}}
                 <td>{{$row->room_id}}</td>
                 <td>{{$row->accommodation_id}}</td>
                 <td>{{$row->num_room}}</td>

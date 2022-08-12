@@ -5,7 +5,7 @@
 
     <div class="container text-center">
         <h1>Listado de Hoteles</h1>
-        <a href="{{ route('hotel.create', ['id'=>1]) }}" class="btn btn-primary">Crear Clientes</a>
+        <a href="{{ route('hotel.create', ['id'=>1]) }}" class="btn btn-primary">Crear Hotel</a>
 
         @if (Session::has('mensaje'))
 
@@ -21,8 +21,8 @@
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Nombre</th>
-                <th scope="col">Saldo</th>
-                <th scope="col">des</th>
+                <th scope="col">Nit</th>
+                <th scope="col">Direccion</th>
                 {{-- <th scope="col">room</th> --}}
 
                 <th scope="col">Acciones</th>
@@ -35,8 +35,8 @@
               <tr>
                 <th scope="row">{{$row->id}}</th>
                 <td>{{$row->name}}</td>
-                <td>{{$row->due}}</td>
-                <td>{{$row->comments}}</td>
+                <td>{{$row->nit}}</td>
+                <td>{{$row->address}}</td>
                 {{-- <td>{{$row->id}}</td> --}}
                 <td>
                     <a href="{{ route('hotel.edit', $row ) }}" class="btn btn-warning" target="_blank" rel="noopener noreferrer">Editar</a> -
